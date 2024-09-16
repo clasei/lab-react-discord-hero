@@ -2,21 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
-  background-color: #404FED;
-  color: rgba(255, 255, 255, 0.87);
   margin: 0;
-  display: flex;
-  place-items: center;
-
-}
-
-.App {
+  height: 100vh;
   background-color: #404FED;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  height: 100vh;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  background-color: #404FED;
+  z-index: 10;
+
+
+  margin: 0;
+}
+
+#discord-logo, #menu-icon {
+  height: 25px;
+  margin-right: 50px;
+  margin-left: 25px;
+}
+
+#hero-container {
+  width: 500px;
+  margin-top: 100px;
+  margin-left: 25px;
+  padding: 20px;
+  text-align: left;
+  
 }
 
 h1 {
@@ -26,34 +49,43 @@ h1 {
   text-transform: uppercase;
 }
 
-p, h4 {
+h4 {
   font-family: 'Roboto', sans-serif;
-  font-size: 17px;
   font-weight: 400;
-  line-height: 25px;
 }
 
-#hero-container {
-  width: 500px;
-  margin-left: 25px;
-  margin-top: 100px;
+#image-container {
+  margin-left: 400px;
+  position: absolute;
+  bottom: 0;
 }
 
-#nav-bar {
+.button-section {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
+  flex-direction: column;
+  gap: 10px;
+  align-items: left;
   padding: 20px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #404FED;
-  z-index: 1000;
+  position: absolute;
 }
 
-#discord-logo, #menu-icon {
-  height: 25px;
-  margin-left: 10px;
-  margin-right: 60px;
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  width: fit-content;
+  max-width: 300px;
+  text-align: left;
+  
+}
+
+.download-button, .download-button a {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+
 }
