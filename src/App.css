@@ -22,12 +22,11 @@ body {
   top: 0;
   background-color: #404FED;
   z-index: 10;
-
-
   margin: 0;
 }
 
-#discord-logo, #menu-icon {
+#discord-logo,
+#menu-icon {
   height: 25px;
   margin-right: 50px;
   margin-left: 25px;
@@ -39,7 +38,7 @@ body {
   margin-left: 25px;
   padding: 20px;
   text-align: left;
-  
+
 }
 
 h1 {
@@ -80,12 +79,14 @@ button {
   width: fit-content;
   max-width: 300px;
   text-align: left;
-  
 }
 
-.download-button, .download-button a {
+#download-button {
   background-color: white;
   color: black;
-  text-decoration: none;
+}
 
+#open-button {
+  background-color: black;
+  color: white;
 }

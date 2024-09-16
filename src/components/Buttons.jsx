@@ -4,8 +4,8 @@ function Buttons() {
 
     <div className="button-section">
       
-      <button class="download-button">Download for Mac</button>
-      <button class="open-button">Open Discord in your browser</button>
+      <button id="download-button">Download for Mac</button>
+      <button id="open-button">Open Discord in your browser</button>
     </div>
   )
 }
